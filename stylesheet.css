@@ -107,6 +107,49 @@ h2 {
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  white-space: nowrap;
+}
+
+/* Mobile: stack layout, scale name, responsive images */
+@media (max-width: 600px) {
+  .name {
+    font-size: clamp(20px, 6vw, 28px);
+  }
+  .header-table tr,
+  .header-table td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .header-table td:last-child {
+    text-align: center;
+  }
+  .header-table img {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+  .paper-row tr,
+  .paper-row td {
+    display: block;
+    width: 100% !important;
+  }
+  .paper-row td:first-child {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .paper-row img {
+    max-width: 100%;
+    width: 160px;
+    height: auto;
+  }
+  .misc-row tr,
+  .misc-row td {
+    display: block;
+    width: 100% !important;
+  }
+  .misc-row td:first-child {
+    text-align: center;
+  }
 }
 
 .one {
